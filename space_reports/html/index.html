@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="reportForm" class="nui-section">
+        <h1 class="nui-header">Enviar Reporte</h1>
+        <div class="form-group">
+            <label for="reportTitle">Título:</label>
+            <input type="text" id="reportTitle" placeholder="Escribe un título breve">
+        </div>
+        <div class="form-group">
+            <label for="reportContent">Contenido:</label>
+            <textarea id="reportContent" placeholder="Describe el problema"></textarea>
+        </div>
+        <div class="nui-footer">
+            <button id="submitReport">Enviar</button>
+            <button id="closeReportForm">Cerrar</button>
+        </div>
+    </div>
+    
+
+    <div id="reportsList" class="nui-section" style="display: none;">
+        <h1>Lista de Reportes</h1>
+        <ul id="reportItems"></ul>
+        <button id="closeReportsList">Cerrar</button>
+    </div>
+    
+
+    <div id="reportDetails" class="nui-section" style="display: none;">
+        <h1>Detalles del Reporte</h1>
+    
+        <p><strong>Título:</strong> <span id="detailsTitle" data-id=""></span></p>
+    
+        <p><strong>Contenido:</strong> <span id="detailsContent"></span></p>
+    
+        <div id="detailsPlayerInfo">
+            <p><strong>Nombre IC:</strong> <span id="detailsICName"></span></p>
+            <p><strong>Nombre Discord:</strong> <span id="detailsDiscordName"></span></p>
+            <p><strong>Nombre Steam:</strong> <span id="detailsSteamName"></span></p>
+            <p><strong>ID (source):</strong> <span id="detailsSourceID"></span></p>
+        </div>
+    
+        <p><strong>Fecha:</strong> <span id="detailsDate"></span></p>
+    
+        <div id="reportDetailsButtons">
+            <button id="closeReportDetails">Cerrar</button>
+            <button id="backToReports">ATRÁS</button>
+            <button id="deleteReport">ELIMINAR</button>
+            <button id="revivePlayer">REVIVIR</button>
+            <button id="openPedMenu">PEDMENU</button>
+        </div>
+    </div>
+    
+    
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
